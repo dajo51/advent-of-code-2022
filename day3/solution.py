@@ -20,6 +20,3 @@ def part2(input) -> int:
             intersection = set(listed[i - 3]) & set(listed[i - 2]) & set(listed[i - 1])
             total += string.ascii_letters.index(min(intersection)) + 1
     return total
-
-
-print(part2("./day3/input.txt"))
